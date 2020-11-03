@@ -7,6 +7,7 @@
 html{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    line-height: 1.6;
 }
 
 
@@ -65,7 +66,22 @@ nav{
     display: inline-block;     
     margin-right: 30px;
     font-size: 0.8rem;
+}
+
+.main-nav li a{
     color: #506690;
+}
+
+.main-nav p{
+    color: white;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.main-nav h6{
+    color: #335eea;
+    font-size: 0.6rem;
+    font-weight: 400;
 }
 
 .btn-buy{
@@ -76,14 +92,62 @@ nav{
     margin-top: -0.5rem;
 }
 
-.landings-content{
+.landings-content, .pages-content{
     display: none;
-  position: absolute;
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: -15%;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-.landings:hover .landings-content{
+/*landings*/
 
+.landings-content .col{
+    margin: 0px;
 }
+
+.landings-content-left{
+    background-image: linear-gradient(45deg, rgba(2,33,64,0.8),rgba(45,95,93,0.85)), url(../img/dashkit\ copy.jpg);
+    background-size: cover; 
+    background-position: center; 
+    height: 40vh;  
+    text-align: center;
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.landings-content-left p{
+    color: white;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.btn-view-all-pages{
+    position: initial;
+    background-color: white;
+    color: #335eea;
+}
+
+.landings-content-right{
+    padding: 2rem;
+}
+
+/*pages*/
+
+.pages-content{
+    padding: 1.6rem 2rem;
+    width: 600px;
+}
+
+
+.landings:hover .landings-content, .pages:hover .pages-content{
+    display: block;
+}
+
+.
 
 /*WELCOME*/
 
