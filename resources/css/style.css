@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+.btn{
+    padding: 0.8rem 1rem;
+    outline-style: none;
+    border-radius: 0.4rem;
+    outline: none;
+    border-style: none;
+    transition: linear 0.1s;
+}
+
+
+.btn:hover{
+    transform: translateY(-0.2rem) !important;
+    box-shadow: 0 1rem 2.5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.1) !important;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 2.4rem;
+}
+
+h3{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+p{
+    margin-top: 1rem;
+    color: #869ab8;
+    line-height: 1.7rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*NAVBAR*/
+
+nav{
+    margin-top: 30px;
+}
+
+.logo{
+    float: left;
+}
+
+.main-nav{
+    float: left;
+    list-style: none;               
+    margin-left: 25%;
+}
+
+.main-nav li{
+    display: inline-block;     
+    margin-right: 30px;
+    font-size: 0.8rem;
+    color: #506690;
+}
+
+.btn-buy{
+    font-size: 0.8rem;
+    float: right;
+    background-color: #335eea;
+    color: white;
+    margin-top: -0.5rem;
+}
+
+.landings-content{
+    display: none;
+  position: absolute;
+}
+
+.landings:hover .landings-content{
+
+}
+
+/*WELCOME*/
+
+.welcome{
+    margin-top: 6rem;
+}
+
+.btn-view-all{
+    background-color: #335eea;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.btn-documentation{
+    background-color: rgba(51,94,234,.1);
+    color: #335eea;
+    font-size: 0.8rem;
+}
+
+/*FEATURE*/
+
+.feature{
+    margin-top: 3rem;
+}
+
+.feature p{
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+
+.feature svg{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+
+/*BRANDS*/
+
+.brands{
+    margin-top: 3rem;
+    border-top: 1px #f1f4f8 solid;
+    border-bottom: 1px #f1f4f8 solid;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.brands svg{
+    color: #869ab8;
+    max-width: 6.5rem;
+}
+
+/*ABOUT*/
+
+.about{
+    padding-top: 4rem;
+    background-image: linear-gradient(to bottom,#f9fbfd 0,#fff 100%);
+}
+
+.about form{
+    text-align: center;
+    background-color: white;
+    width: 400px;
+    box-shadow: 0 1.5rem 4rem rgba(22,28,45,.05);
+}
+
+.about img{
+    clip-path: ellipse(100% 60% at 50% 38%);
+}
+
+.about input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #f1f4f8;
+    margin-bottom: 0.8rem;
+    width: 15rem;
+    padding: 0.5rem 0px 1rem 0px;
+}
+
+.about a{
+    margin-top: 3rem;
+}
+
+.about .btn{
+    font-size: 0.8rem;
+    color: white;
+    background-color: #42ba96;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+/*HOVER*/
+
