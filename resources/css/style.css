@@ -74,7 +74,7 @@ nav{
 
 .main-nav p{
     color: white;
-    margin-top: 0.4rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -92,11 +92,9 @@ nav{
     margin-top: -0.5rem;
 }
 
-.landings-content, .pages-content{
+.landings-content, .pages-content, .account-content, .side-bar-content{
     display: none;
     position: absolute;
-    margin-top: 0.5rem;
-    margin-left: -15%;
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -113,7 +111,7 @@ nav{
     background-image: linear-gradient(45deg, rgba(2,33,64,0.8),rgba(45,95,93,0.85)), url(../img/dashkit\ copy.jpg);
     background-size: cover; 
     background-position: center; 
-    height: 40vh;  
+    height: 45vh;  
     text-align: center;
     color: white;
     padding: 4rem 2rem;
@@ -132,7 +130,7 @@ nav{
 }
 
 .landings-content-right{
-    padding: 2rem;
+    padding: 2rem 1.6rem;
 }
 
 /*pages*/
@@ -142,12 +140,47 @@ nav{
     width: 600px;
 }
 
+/*account*/
 
-.landings:hover .landings-content, .pages:hover .pages-content{
+.account-content{
+    padding: 1rem 1.2rem;
+    color: #506690;
+}
+
+.account-content li{
+    width: 100%;
+}
+
+.account-content li span{
+    float: right;
+}
+
+.side-bar-content{
+    width: 200px;
+    right: auto;
+    left: 100%;
+    margin-top: -2.3rem;
+    margin-left: 0;
+    float: none;
+    padding: 1rem 1.6rem;
+}
+
+.side-bar-content a{
     display: block;
 }
 
-.
+
+.landings:hover .landings-content, .pages:hover .pages-content, .account:hover .account-content{
+    display: block;
+}
+
+.settings:hover .settings-content, .sign-in:hover .sign-in-content, .sign-up:hover .sign-up-content, .password-reset:hover .password-reset-content, .error:hover .error-content{
+    display: block;
+}
+
+
+
+
 
 /*WELCOME*/
 
