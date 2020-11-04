@@ -1,6 +1,6 @@
 .row{
     max-width: 1000px;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .row:before,
@@ -91,7 +91,7 @@
 
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
 	.span-2-of-2 {
 		width: 100%; 
 	}
@@ -144,8 +144,6 @@
 		width: 100%; 
 	}
 	.span-1-of-6 {
-		width: 100%; 
+		width: 32.26%;
     }
-    
-
 }
