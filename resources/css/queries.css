@@ -1,7 +1,12 @@
 @media only screen and (max-width:992px){
     html{
-        font-size: 16px;
+        font-size: 18px;
     }
+
+    h1{
+        font-size: 2rem;
+    }
+
     .main-nav{
         display: none;
     }
@@ -18,15 +23,36 @@
         max-width: 767px;
     }
 
+    .pricing p{
+        width: 70%;
+        color: #506690;
+        margin-left: 15%;
+    }
+
+    .cta p{
+        font-size: 1rem;
+    }
+
+    footer a{
+        font-size: 0.8rem;
+    }
+
+    .testimonials img{
+        width: 22rem;
+    }
 }
 
 @media only screen and (max-width:767px){
+    h1{
+        font-size: 1.6rem;
+    }
+
     .col{
         margin: 0;
     }
 
     .row{
-        max-width: 480px;
+        max-width: 540px;
     }
 
     .welcome .row{
@@ -68,6 +94,42 @@
     .about-img-1{
         width: 100%;
     }
+
+    .cta p{
+        font-size: 0.8rem;
+    }
+
+    .stats img{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    footer .col{
+        margin-top: 1.4rem;
+    }
+
+    .testimonials img{
+        width: 25rem;
+        clip-path: none;
+    }
+
+    .shape-1 svg{
+        transform: scale(3.4);
+    }
+}
+
+@media only screen and (max-width:540px){
+    html{
+        font-size: 16px;
+    }
+    
+    .row{
+        max-width: 480px;
+    }
+
+    footer .span-1-of-4{
+        padding-top: 1rem;
+    }
 }
 
 @media only screen and (max-width:480px){
@@ -77,5 +139,9 @@
 
     .row{
         max-width: 320px;
+    }
+
+    .shape-1 svg{
+        transform: scale(3.4);
     }
 }
