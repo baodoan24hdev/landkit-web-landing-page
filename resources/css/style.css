@@ -91,7 +91,7 @@ nav{
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 160px;
+    min-width: 240px;
     box-shadow: 0rem 0.5rem 0.8rem 0rem rgba(0,0,0,0.2);
     z-index: 1;
     left: 50%;
@@ -108,11 +108,10 @@ nav{
 .landings-content-left{
     background-image: linear-gradient(45deg, rgba(2,33,64,0.8),rgba(45,95,93,0.85)), url(../img/dashkit\ copy.jpg);
     background-size: cover; 
-    background-position: center; 
-    height: 32vh;  
+    background-position: center;  
     text-align: center;
     color: white;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
 }
 .landings-content-left p{
     color: white;
@@ -136,7 +135,7 @@ nav{
 
 /*account*/
 .account-content{
-    padding: 1rem 1.2rem;
+    padding: 1rem 0rem;
     color: #506690;
     width: 200px;
 }
@@ -151,13 +150,14 @@ nav{
     width: 200px;
     right: auto;
     left: 150%;
-    margin-top: -2.3rem;
+    margin-top: -2.55rem;
     margin-left: 0;
     float: none;
     padding: 1rem 1.6rem;
 }
 .side-bar-content a{
     display: block;
+    padding: 5px 0px;
 }
 
 /*documentation*/
@@ -412,6 +412,7 @@ nav{
 .slider{
     position: relative;
     padding: 0 1.2rem;
+    margin-top: 2rem    ;
 }
 .testimonials .slide-item{
     display: none;
@@ -420,13 +421,17 @@ nav{
     transition: 0.5s;
     border-radius: 10px;
     background-color: white;
+    height: 20rem;
+}
+.testimonials .col{
+    margin: 0;
 }
 .testimonials img{
-    position: relative;
     clip-path: ellipse(63% 97% at 37% 35%);
     clip-path: ellipse(63% 97% at 37% 35%);
-    width: 25rem;
-    height: auto;
+    height: 20rem;
+    left: 0;
+    border-radius: 10px 0px 0px 10px;
 }
 .testimonials svg{
     position: relative;
