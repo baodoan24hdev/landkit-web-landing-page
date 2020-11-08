@@ -88,7 +88,8 @@ nav{
     position: relative;
 }
 .landings-content, .pages-content, .account-content, .side-bar-content, .documentation-content{
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
     background-color: white;
     min-width: 240px;
@@ -154,6 +155,7 @@ nav{
     margin-left: 0;
     float: none;
     padding: 1rem 1.6rem;
+    opacity: 0;
 }
 .side-bar-content a{
     display: block;
@@ -180,10 +182,12 @@ nav{
 
 /*navbar-hover*/
 .landings:hover .landings-content, .pages:hover .pages-content, .account:hover .account-content, .documentation:hover .documentation-content{
-    display: block;
+    opacity: 1;
+    pointer-events: visible;
 }
 .settings:hover .settings-content, .sign-in:hover .sign-in-content, .sign-up:hover .sign-up-content, .password-reset:hover .password-reset-content, .error:hover .error-content{
-    display: block;
+    opacity: 1;
+    pointer-events: visible;
 }
 
 /*mobile-nav*/
@@ -293,8 +297,8 @@ nav{
     padding-top: 6rem;
 }
 .welcome-btn-wrapper{
-    display: inline-block;
-    position: relative;
+    display: flex !important;
+    flex-direction: row !important;
 }
 .btn-view-all{
     background-color: #335eea;
