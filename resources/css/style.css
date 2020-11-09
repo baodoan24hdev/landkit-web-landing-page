@@ -197,31 +197,27 @@ nav{
     color: #506690;
 }
 #mobile-nav-dropdown{
-    position: fixed;
+    position: absolute;
     font-family: arial,helvetica, sans-serif;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.03);
-    z-index: 99999;
     opacity:0;
     transition: opacity 400ms linear;
     pointer-events: none;
-}
-#mobile-nav-dropdown:target {
-    opacity:1;
-    pointer-events: auto;
-}
-#mobile-nav-dropdown > div {
     width: 96%;
     height: 96%;
     margin: 2% auto;
-    position: relative;
     padding-top: 20px;
     background: white;
     border-radius: 10px;
-    overflow-y: auto;
+    overflow-y: scroll;
+}
+
+#mobile-nav-dropdown > div {
+   
 }
 .fa-times{
     float: right;
@@ -360,7 +356,7 @@ nav{
     width: 20rem;
     clip-path: ellipse(100% 60% at 50% 38%);
 }
-.about input[type="text"]{
+.about input[type="text"], .about input[type="password"], .about input[type="email"]{
     border: none;
     border-bottom: 1px solid #f1f4f8;
     margin-bottom: 0.8rem;
@@ -419,9 +415,6 @@ nav{
     margin-top: 2rem    ;
 }
 .testimonials .slide-item{
-    display: none;
-    opacity: 0;
-    visibility: hidden;
     transition: 0.5s;
     border-radius: 10px;
     background-color: white;
@@ -442,18 +435,6 @@ nav{
     width: 8rem;
     height: 8rem;
 }
-.testimonials input[type="radio"]{
-    display: none;
-}
-.testimonials input[type="radio"]:checked + .slide-item {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-}
-input#slide-1:checked ~ label.slide-1,
-input#slide-2:checked ~ label.slide-2 {
-    display: block;
-}
 .testimonials label {
     position: absolute;
     top:45%;
@@ -462,7 +443,6 @@ input#slide-2:checked ~ label.slide-2 {
     left: 0px;
     background: #335eea;
     color: #fff;
-    display:none;
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -492,6 +472,7 @@ label.next {
     color: #f1f4f8!important;
     position: relative;
     z-index: -1;
+    width: inherit;
 }
 .shape-1 .shape-bottom{
     top: 0;
@@ -728,6 +709,7 @@ input[type="checkbox"], input[type="radio"] {
 
 /*SHAPE-2*/
 .shape-2{
+    width: inherit;
     margin-top: -16rem!important;
     color: #1b2a4e!important;
     background-color: rgba(51,94,234,.1);
