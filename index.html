@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="resources/css/grid.css">
     <link rel="stylesheet" href="resources/css/queries.css">
     <script src="https://kit.fontawesome.com/501b9deca1.js" crossorigin="anonymous"></script>
-    <script src="resources/custom.js"></script>
+    <!--<script src="resources/custom.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="resources/custom-jquery.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -134,9 +137,9 @@
                                         <a href="#">Basic</a>
                                     </div>
                                 </li>
-                                <li class="error" style="padding: 5px 30px;">
+                                <li class="error-nav" style="padding: 5px 30px;">
                                     <a href="#">Error<span>></span></a>
-                                    <div class="side-bar-content error-content">
+                                    <div class="side-bar-content error-nav-content">
                                         <a href="#">Side Cover</a>
                                         <a href="#">Illustration</a>
                                         <a href="#">Basic</a>
@@ -188,7 +191,7 @@
                 <div class="mobile-nav">
                     <a href="#" onclick="openMobileNavDropdown()"><i class="fas fa-bars mobile-nav-icon"></i></a>
                     <div class="mobile-nav-dropdown" id="mobile-nav-dropdown">
-                        <a href="#" onclick="closeMobileNavDropdown()"><i class="fas fa-times"></i></a>   
+                        <a href="#" onclick="closeMobileNavDropdown()"><i class="fas fa-times close-mobile-nav-icon"></i></a>   
                         <div class="landings-mobile-nav">
                             <div class="row">
                                 <h5>Landings</h5>
@@ -291,7 +294,7 @@
                                     <div class="dropdown-mobile password-reset-content-mobile" id="password-reset-content-mobile dropdown-mobile">
                                         <a href="#">Side Cover</a>
                                         <a href="#">Illustration</a>
-                                        <a href="#">Basic</ a>
+                                        <a href="#">Basic</a>
                                     </div>
                                 </li>
                                 <li class="error-mobile">
@@ -430,12 +433,12 @@
     <div class="about">
         <div class="row about-1">
             <div class="col span-1-of-2">
-                <form method="POST" onsubmit="return false">
+                <form method="POST" onsubmit="return false" class="about-form">
                     <img class="about-img-1" src="./resources/img/photo-2.jpg"/><br/>
-                    <input type="text" placeholder="Name" id="name" oninvalid="invalidName(this)" oninput="invalidName(this)" name="name" required="required"/><br/>
-                    <input type="email" placeholder="Email" id="email" oninvalid="invalidEmail(this)" oninput="invalidEmail(this)" name="email" required="required"/><br/>
-                    <input type="password" placeholder="Password" id="password" oninvalid="invalidPassword(this)" oninput="invalidPassword(this)" name="password" required="required"/><br/>
-                    <input type="submit" class="btn" value="Download a sample" onclick="handleSubmit()"/>
+                    <input type="text" placeholder="Name" id="name" name="name" oninvalid="invalidName(this)" oninput="invalidName(this)"/><br/>
+                    <input type="email" placeholder="Email" id="email" name="email" oninvalid="invalidEmail(this)" oninput="invalidEmail(this)"/><br/>
+                    <input type="password" placeholder="Password" id="password" name="password" oninvalid="invalidPassword(this)" oninput="invalidPassword(this)"/><br/>
+                    <input type="submit" class="btn btn-submit" id="btn-submit" value="Download a sample" onclick="handleSubmit()"/>
                 </form>
             </div>
             <div class="col span-1-of-2">
@@ -492,7 +495,7 @@
         <h2 style="text-align: center;">Our customers are our biggest fans.</h2>
         <p style="text-align: center;">We don't like to brag, but we don't mind letting our customers do it for us.</p>
         <p style="text-align: center;">Here are a few nice things folks have said about our themes over the years.</p>
-        <div class="slider" onload="showSlides(1)">
+        <div class="slider">
             <div class="slide-item">
                 <div class="row">
                     <div class="col span-1-of-2">

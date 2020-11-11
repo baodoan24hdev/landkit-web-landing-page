@@ -3,7 +3,6 @@ function openMobileNavDropdown(){
     mobileNavDropdown.style.opacity = '1';
     mobileNavDropdown.style.pointerEvents = "auto";
     mobileNavDropdown.style.overflowY = "auto";
-    document.getElementsByTagName("body").style.overflowY = "hidden";
 }
 
 function closeMobileNavDropdown(){
@@ -84,8 +83,6 @@ function showSlides(n){
   if (n < 1) {slideIndex = slides.length};
   for (i = 0; i < slides.length; i++){
       slides[i].style.display = "none";
-      //slides[i].style.visibility = "hidden";  
   }
   slides[slideIndex-1].style.display = "block";
-  //slides[slideIndex-1].style.visibility = "visible";
 }

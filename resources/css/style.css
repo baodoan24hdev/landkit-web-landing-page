@@ -185,7 +185,7 @@ nav{
     opacity: 1;
     pointer-events: visible;
 }
-.settings:hover .settings-content, .sign-in:hover .sign-in-content, .sign-up:hover .sign-up-content, .password-reset:hover .password-reset-content, .error:hover .error-content{
+.settings:hover .settings-content, .sign-in:hover .sign-in-content, .sign-up:hover .sign-up-content, .password-reset:hover .password-reset-content, .error-nav:hover .error-nav-content{
     opacity: 1;
     pointer-events: visible;
 }
@@ -196,7 +196,7 @@ nav{
     float: right;
     color: #506690;
 }
-#mobile-nav-dropdown{
+.mobile-nav-dropdown{
     position: absolute;
     font-family: arial,helvetica, sans-serif;
     top: 0;
@@ -213,11 +213,13 @@ nav{
     padding-top: 20px;
     background: white;
     border-radius: 10px;
-    overflow-y: scroll;
+    overflow-y: none;
+    z-index: 1;
 }
-
-#mobile-nav-dropdown > div {
-   
+.open-mobile-nav-dropdown{
+    opacity: 1 ;
+    pointer-events: visible;
+    overflow-y: auto;
 }
 .fa-times{
     float: right;
@@ -287,7 +289,6 @@ nav{
 }
 
 
-
 /*WELCOME*/
 .welcome{
     padding-top: 6rem;
@@ -351,12 +352,14 @@ nav{
     width: 20rem;
     box-shadow: 0 1.5rem 4rem rgba(22,28,45,.05);
     padding-bottom: 2rem;
+    position: relative;
 }
 .about-img-1{
     width: 20rem;
     clip-path: ellipse(100% 60% at 50% 38%);
 }
 .about input[type="text"], .about input[type="password"], .about input[type="email"]{
+    position: relative;
     border: none;
     border-bottom: 1px solid #f1f4f8;
     margin-bottom: 0.8rem;
@@ -450,6 +453,12 @@ nav{
 label.next {
     right: 0px;
     left: auto;
+}
+.set-display-none{
+    display: none !important;
+}
+.set-display-block{
+    display: block !important;
 }
 .testimonials p{
     margin-top: 0px;
@@ -799,4 +808,16 @@ footer a{
     display: block;
 }
 
-/*HOVER*/
+/*ERROR JQUERY*/
+label.error{
+    background-color: white;
+    border: 1px solid #f6f6f6;
+    border-radius: 20px;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.6rem;
+    position: absolute;
+    left: 15%;
+    margin-top: 1.6rem;
+    z-index: 1;
+    box-shadow: 0 1rem 2.5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.1) !important;
+}
