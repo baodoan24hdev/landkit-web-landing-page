@@ -433,12 +433,12 @@
     <div class="about">
         <div class="row about-1">
             <div class="col span-1-of-2">
-                <form method="POST" onsubmit="return false" class="about-form">
+                <form class="about-form">
                     <img class="about-img-1" src="./resources/img/photo-2.jpg"/><br/>
                     <input type="text" placeholder="Name" id="name" name="name" oninvalid="invalidName(this)" oninput="invalidName(this)"/><br/>
                     <input type="email" placeholder="Email" id="email" name="email" oninvalid="invalidEmail(this)" oninput="invalidEmail(this)"/><br/>
                     <input type="password" placeholder="Password" id="password" name="password" oninvalid="invalidPassword(this)" oninput="invalidPassword(this)"/><br/>
-                    <input type="submit" class="btn btn-submit" id="btn-submit" value="Download a sample" onclick="handleSubmit()"/>
+                    <input type="submit" class="btn btn-submit" id="btn-submit" value="Download a sample" onsubmit="handleSubmit()"/>
                 </form>
             </div>
             <div class="col span-1-of-2">
