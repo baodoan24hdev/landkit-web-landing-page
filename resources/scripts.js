@@ -1,0 +1,22 @@
+$(function(){
+    $(".settings-header-mobile").click(function(){
+        console.log("hello");
+        $(".settings-content-mobile").toggleClass("show-dropdown-mobile");
+    })
+    $(".sign-in-header-mobile").click(function(){
+        console.log("hello");
+        $(".sign-in-content-mobile").toggleClass("show-dropdown-mobile");
+    })
+    $(".sign-up-header-mobile").click(function(){
+        console.log("hello");
+        $(".sign-up-content-mobile").toggleClass("show-dropdown-mobile");
+    })
+    $(".password-reset-header-mobile").click(function(){
+        console.log("hello");
+        $(".password-reset-content-mobile").toggleClass("show-dropdown-mobile");
+    })
+    $(".error-header-mobile").click(function(){
+        console.log("hello");
+        $(".error-content-mobile").toggleClass("show-dropdown-mobile");
+    })
+})

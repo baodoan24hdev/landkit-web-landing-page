@@ -1,3 +1,5 @@
+@import "/resources/css/animate.css";
+
 *{
     margin: 0px;
     padding: 0px;
@@ -283,11 +285,16 @@ nav{
 }
 .dropdown-mobile{
     display: none;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
-.dropdown-mobile > div{
+.show-dropdown-mobile{
     display: block;
 }
-
+.change-color-header-mobile{
+    color: #133bbd;
+}
 
 /*WELCOME*/
 .welcome{
@@ -419,7 +426,6 @@ nav{
     margin-top: 2rem    ;
 }
 .testimonials .slide-item{
-    transition: 0.5s;
     border-radius: 10px;
     background-color: white;
     height: 20rem;
@@ -433,6 +439,9 @@ nav{
     height: 20rem;
     left: 0;
     border-radius: 10px 0px 0px 10px;
+
+    animation-name: slide-item-img !important;
+    animation-duration: 0.5s !important;
 }
 .testimonials svg{
     position: relative;
@@ -461,6 +470,7 @@ label.next {
 .set-display-block{
     display: block !important;
 }
+
 .testimonials p{
     margin-top: 0px;
     color: black;
@@ -823,3 +833,4 @@ footer a{
     z-index: 1;
     box-shadow: 0 1rem 2.5rem rgba(22,28,45,.1),0 .5rem 1rem -.75rem rgba(22,28,45,.1) !important;
 }
+
